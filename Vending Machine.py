@@ -2,6 +2,7 @@ import decimal
 #input1 = item selection
 #input2 = user amount input
 #input3 = if insufficient funds - C or R
+
 item1 = {
  "item1": "Sea Salt Chips",
  "price1": 2.50,
@@ -65,7 +66,7 @@ item5_code = item5.get("code5")
 item5_value5 = item5.get("value5")
 ###################################
 item6 = {
- "item6": "Gummies",
+ "item6": "Gummy Bears",
  "price6": 5.60,
  "value6": "5.60",
  "code6": "C01"
@@ -90,20 +91,20 @@ print("----------------------------------- MENU -------------------------------"
 print("########################################################################")
 print("------------------------------------------------------------------------")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-print("{0:<10}{1:>30}{2:>25}".format("ITEM", "PRICE", "Item Code"))
+print("{0:<10}{1:>30}{2:>22}".format("ITEM", "PRICE", "Item Code"))
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 print("------------------------------------------------------------------------")
-print("{0:^10}{1:>15}{2:>0}{3:>19}".format(item1_name, " $" , item1_value1, item1_code))
+print("{0:^10}{1:>22}{2:>0}{3:>19}".format(item1_name, " $" , item1_value1, item1_code))
 print("------------------------------------------------------------------------")
-print("{0:^10}{1:>18}{2:>0}{3:>19}".format(item2_name, " $" , item2_value2, item2_code))
+print("{0:^10}{1:>16}{2:>0}{3:>19}".format(item2_name, " $" , item2_value2, item2_code))
 print("------------------------------------------------------------------------")
-print("{0:^10}{1:>19}{2:>0}{3:>19}".format(item3_name, " $" , item3_value3, item3_code))
+print("{0:^10}{1:>24}{2:>0}{3:>19}".format(item3_name, " $" , item3_value3, item3_code))
 print("------------------------------------------------------------------------")
-print("{0:^10}{1:>23}{2:>0}{3:>19}".format(item4_name, " $" , item4_value4, item4_code))
+print("{0:^10}{1:>25}{2:>0}{3:>19}".format(item4_name, " $" , item4_value4, item4_code))
 print("------------------------------------------------------------------------")
 print("{0:^10}{1:>21}{2:>0}{3:>19}".format(item5_name, " $" , item5_value5, item5_code))
 print("------------------------------------------------------------------------")
-print("{0:^10}{1:>6}{2:>0}{3:>19}".format(item6_name, "  $" , item6_value6, item6_code))
+print("{0:^10}{1:>25}{2:>0}{3:>19}".format(item6_name, "  $" , item6_value6, item6_code))
 print("------------------------------------------------------------------------")
 print("########################################################################")
 print()
@@ -112,7 +113,7 @@ print()
 
 def select_item():
 
-	main_input1 = input("Enter item code: ")
+	main_input1 = input("Enter item code: ").upper()
 
 
 	if (main_input1 == "A01"):
@@ -143,7 +144,7 @@ def select_item():
 		#selected_item()
 
 	else:
-		print("ERROR")
+		print("ERROR - invalid code")
 		select_item()
 
 
@@ -269,7 +270,3 @@ def select_item():
 
 select_item()
 print()
-
-
-
-
