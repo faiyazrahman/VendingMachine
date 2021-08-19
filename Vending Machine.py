@@ -215,37 +215,37 @@ def select_item():
 		print("Thank you!")
 
 	elif(input2 > item1_price) and (selection == 1):
-		print("{0:^10}{1:<11}0".format("Please take your change: $", round((input2 - item1_price), 3)))
+		print("{0:^10}{1:<11}0".format("Please take your change: $", "%.2f" % round((input2 - item1_price), 2)))
 		print()
 		print("Thank you!")
 		print("--------------------------------------------")
 
 	elif(input2 > item2_price) and (selection == 2):
-		print("{0:^10}{1:<11}".format("Please take your change: $", input2 - item2_price))
+		print("{0:^10}{1:<11}".format("Please take your change: $", "%.2f" % round((input2 - item2_price), 2)))
 		print()
 		print("Thank you!")
 		print("--------------------------------------------")
 
 	elif(input2 > item3_price) and (selection == 3):
-		print("{0:^10}{1:<11}".format("Please take your change: $", input2 - item3_price))
+		print("{0:^10}{1:<11}".format("Please take your change: $", "%.2f" % round((input2 - item3_price), 2)))
 		print()
 		print("Thank you!")
 		print("--------------------------------------------")
 
 	elif(input2 > item4_price) and (selection == 4):
-		print("{0:^10}{1:<11}".format("Please take your change: $", input2 - item4_price))
+		print("{0:^10}{1:<11}".format("Please take your change: $", "%.2f" % round((input2 - item4_price), 2)))
 		print()
 		print("Thank you!")
 		print("--------------------------------------------")
 
 	elif(input2 > item5_price) and (selection == 5):
-		print("{0:^10}{1:<11}".format("Please take your change: $", input2 - item5_price))
+		print("{0:^10}{1:<11}".format("Please take your change: $", "%.2f" % round((input2 - item5_price), 2)))
 		print()
 		print("Thank you!")
 		print("--------------------------------------------")
 
 	elif(input2 > item6_price) and (selection == 6):
-		print("{0:^10}{1:<11}".format("Please take your change: $", input2 - item6_price))
+		print("{0:^10}{1:<11}".format("Please take your change: $", "%.2f" % round((input2 - item6_price), 2)))
 		print()
 		print("Thank you!")
 		print("--------------------------------------------")
@@ -270,3 +270,7 @@ def select_item():
 
 select_item()
 print()
+
+
+
+
